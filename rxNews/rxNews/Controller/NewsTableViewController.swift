@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class NewsTableViewController: UITableViewController {
+    
+    let disposeBag = DisposeBag()
+    private var articles = [Article]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,26 @@ class NewsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         self.navigationController!.navigationBar.prefersLargeTitles = true
+        
+        populateNews()
+    }
+    
+    private func populateNews() {
+        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=471ba8410e7645edbb5a8e2e63c71a7a")
+        Observable.just(url)
+            .flatMap { url -> Observable<Data> in
+                let request = URLRequest(url: url!)
+                return URLSession.shared.rx.data(request: request)
+        }.map { data -> [Article]? in
+            return try? JSONDecoder().decode(ArticleList.self, from: data).articles
+        }.subscribe(onNext: { [weak self] articles in
+            if let articles = articles {
+                self?.articles = articles
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
+            }
+            }).disposed(by: disposeBag)
     }
 
     // MARK: - Table view data source

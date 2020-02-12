@@ -16,6 +16,7 @@
 		BD3BEA4E23F36B9C0086EA43 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BEA4D23F36B9C0086EA43 /* NewsTableViewController.swift */; };
 		BD3BEA5323F36F9D0086EA43 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BEA5223F36F9D0086EA43 /* Article.swift */; };
 		BD3BEA5523F36FDD0086EA43 /* ArticlesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BEA5423F36FDD0086EA43 /* ArticlesList.swift */; };
+		BD3BEA5723F371A70086EA43 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BEA5623F371A70086EA43 /* ArticleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BD3BEA4D23F36B9C0086EA43 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		BD3BEA5223F36F9D0086EA43 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		BD3BEA5423F36FDD0086EA43 /* ArticlesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesList.swift; sourceTree = "<group>"; };
+		BD3BEA5623F371A70086EA43 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		D43285A086A6232F3B826EC4 /* Pods-rxNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxNews.debug.xcconfig"; path = "Target Support Files/Pods-rxNews/Pods-rxNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				BD3BEA4D23F36B9C0086EA43 /* NewsTableViewController.swift */,
+				BD3BEA5623F371A70086EA43 /* ArticleTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				BD3BEA3A23F36B150086EA43 /* AppDelegate.swift in Sources */,
 				BD3BEA3C23F36B150086EA43 /* SceneDelegate.swift in Sources */,
 				BD3BEA4E23F36B9C0086EA43 /* NewsTableViewController.swift in Sources */,
+				BD3BEA5723F371A70086EA43 /* ArticleTableViewCell.swift in Sources */,
 				BD3BEA5523F36FDD0086EA43 /* ArticlesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

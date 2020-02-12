@@ -17,6 +17,7 @@
 		BD3BEA5323F36F9D0086EA43 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BEA5223F36F9D0086EA43 /* Article.swift */; };
 		BD3BEA5523F36FDD0086EA43 /* ArticlesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BEA5423F36FDD0086EA43 /* ArticlesList.swift */; };
 		BD3BEA5723F371A70086EA43 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BEA5623F371A70086EA43 /* ArticleTableViewCell.swift */; };
+		BD3BEA5A23F37DF20086EA43 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BEA5923F37DF20086EA43 /* URLRequest+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		BD3BEA5223F36F9D0086EA43 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		BD3BEA5423F36FDD0086EA43 /* ArticlesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesList.swift; sourceTree = "<group>"; };
 		BD3BEA5623F371A70086EA43 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		BD3BEA5923F37DF20086EA43 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
 		D43285A086A6232F3B826EC4 /* Pods-rxNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxNews.debug.xcconfig"; path = "Target Support Files/Pods-rxNews/Pods-rxNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 		BD3BEA3823F36B150086EA43 /* rxNews */ = {
 			isa = PBXGroup;
 			children = (
+				BD3BEA5823F37DD70086EA43 /* Extensions */,
 				BD3BEA5123F36BF30086EA43 /* Model */,
 				BD3BEA5023F36BEE0086EA43 /* Controller */,
 				BD3BEA4F23F36BE60086EA43 /* View */,
@@ -113,6 +116,14 @@
 				BD3BEA5423F36FDD0086EA43 /* ArticlesList.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BD3BEA5823F37DD70086EA43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD3BEA5923F37DF20086EA43 /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FB6F23C3F5DB835703870EED /* Pods */ = {
@@ -243,6 +254,7 @@
 				BD3BEA3A23F36B150086EA43 /* AppDelegate.swift in Sources */,
 				BD3BEA3C23F36B150086EA43 /* SceneDelegate.swift in Sources */,
 				BD3BEA4E23F36B9C0086EA43 /* NewsTableViewController.swift in Sources */,
+				BD3BEA5A23F37DF20086EA43 /* URLRequest+Extensions.swift in Sources */,
 				BD3BEA5723F371A70086EA43 /* ArticleTableViewCell.swift in Sources */,
 				BD3BEA5523F36FDD0086EA43 /* ArticlesList.swift in Sources */,
 			);

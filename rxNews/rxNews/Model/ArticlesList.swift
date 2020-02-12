@@ -8,6 +8,13 @@
 
 import Foundation
 
+extension ArticleList {
+    static var all: Resource<ArticleList> = {
+        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=471ba8410e7645edbb5a8e2e63c71a7a")!
+        return Resource(url: url)
+    }()
+}
+
 struct ArticleList: Decodable {
     let articles:[Article]
 }

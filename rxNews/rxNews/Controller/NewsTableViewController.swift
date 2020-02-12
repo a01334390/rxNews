@@ -30,9 +30,7 @@ class NewsTableViewController: UITableViewController {
     }
     
     private func populateNews() {
-        let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=471ba8410e7645edbb5a8e2e63c71a7a")!
-        let resource = Resource<ArticleList>(url: url)
-        URLRequest.load(resource: resource)
+        URLRequest.load(resource: ArticleList.all)
             .subscribe(onNext: { result in
                 if let result = result {
                     self.articles = result.articles
